@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>谷海苔店のこだわり｜千葉県優良県産品の焼きのり。お歳暮、お中元、ギフト、仏事に。</title>
+        <meta name="description" content="千葉県、千葉県優良県産品に選ばれた株式会社谷海苔店の焼きのりのこだわりをご紹介します。古来より高級品として食してきた海苔は主食であるごはんとの相性も良く、今や食卓には欠かせない存在です。お歳暮、お中元、ギフト、仏事の際にも弊社の海苔を是非ご利用ください。">
+        <meta name="keywords" content="谷海苔店,千葉,海苔,のり,焼きのり,ギフト,仏事,優良県産品">
+        <meta name="robots" content="INDEX,FOLLOW">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=1000">
+
+        <!-- CSS -->
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/base.css" rel="stylesheet" type="text/css">
+        <link href="../css/content.css" rel="stylesheet" type="text/css">
+        <link href="../css/shop.css" rel="stylesheet" type="text/css">
+        <!-- JS -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script><!-- jQueryの読み込み -->
+        <script>window.jQuery || document.write('<script src="../js/jquery.min.js"><\/script>')</script><!-- 上記CDNダウン時のフォールバック -->
+        %DispAnalytics%
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="header">
+                <section class="container">
+                    <div class="header_content clearfix">
+                        <p class="h_logo">
+                            <a href="../"><img src="../common_img/h_logo.png" alt="株式会社谷海苔店"></a>
+                        </p>
+                        <div class="head_infor">
+                            <h1 class="SEO">谷海苔店のこだわり｜千葉県優良県産品の焼きのりをお届けします。お歳暮、お中元、ギフト、仏事にどうぞ。</h1>
+                            %DispHeader%
+                        </div>
+                    </div>
+                </section>
+            </header>
+            <!-- end header -->
+            %DispHeader2%
+            <!-- end gnav -->
+            <main id="regist_page">
+                <section class="ttl_page">
+                    <div class="container">
+                        <h2><img src="./images/ttl_page.png" alt="谷海苔店　通信販売"></h2>
+                    </div>
+                </section>
+                <!-- end ttl_page -->
+                <section id="breadcrumb">
+                    <ul class="container clearfix">
+                        <li><a href="../">HOME</a></li>
+                        <li class="arrow">></li>
+                        <li>谷海苔店　通信販売</li>
+                    </ul>
+                </section>
+                <!-- end breadcrumb -->
+                <section id="main">
+                    <div class="container clearfix">
+                        %DispSide%
+                        <div id="main_content">
+                            <div class="sec_regist">
+                                <ul class="cartflow clearfix" summary="カート現在地">
+                                    <li class="cartflow-now">カートの中身確認</li>
+                                    <li class="cart_arrow"><img src="./images/arrow_01.png" alt="arrow"></li>
+                                    <li class="cartflow-none">必要項目・配送先入力</li>
+                                    <li class="cart_arrow"><img src="./images/arrow_01.png" alt="arrow"></li>
+                                    <li class="cartflow-none">送信内容確認</li>
+                                    <li class="cart_arrow"><img src="./images/arrow_01.png" alt="arrow"></li>
+                                    <li class="cartflow-none">お申し込み完了</li>
+                                </ul>
+                                <h3 class="style_title01">現在のカートの中身</h3>
+                                <table cellpadding="0" cellspacing="0" id="cartlist-table" summary="カートの中身">
+                                    <thead>
+                                    <tr>
+                                        <th width="80">商品番号</th>
+                                        <th width="244">商品名</th>
+                                        <th width="50">数量</th>
+                                        <th width="90">金額(円)</th>
+                                        <th width="50">削除</th>
+                                        <th width="50">追加</th>
+                                    </tr>
+              </thead>
+                                    <tbody>
+                                        <!-- ↓ここから買い物カゴの一覧表示のループ開始 -->
+                                        <!-- tmpl:loop %cart_list_loop% -->
+                                    <tr>
+                                        <td class="ctr">%part_no%</td>
+                                        <td class="ctr">%product_name%</td>
+                                        <td>%quantity%</td>
+                                        <td>%amount%</td>
+                                        <td>
+                                            <form id="deleteform" method="post" action="%php_self%">
+                                                <input type="image" src="./images/del.gif" alt="削除" width="15" height="15">
+                                                <input type="hidden" name="dispcart" value="2">
+                                                <input type="hidden" name="pid" value="%product_id%">
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <form id="addform" method="post" action="%php_self%">
+                      %addItem_link%
+                                                <input type="hidden" name="dispcart" value="3">
+                                                <input type="hidden" name="pid" value="%product_id%">
+                                                <input type="hidden" name="Rtime" value="%rtime%">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <!-- tmpl:endloop %cart_list_loop% -->
+                                    <!--↑ここまで買い物カゴの一覧表示のループ終了 -->
+              </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <th colspan="4">小計(円)</th>
+                                        <td colspan="2">%sum_price%</td>
+                                    </tr>
+              </tfoot>
+                                </table>
+                                %nokori_price%
+                                <p class="price-info mt10">※金額は税込です。</p>
+                                <div class="step-jump4">
+                                    <ul>
+                                        <li class="pt15">
+                                            <a href="../shopping/">ショッピングを続ける</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:document.frm.submit();">お会計<br>初めてご利用になる方
+                                            </a>
+                                            <input type="hidden" name="status" value="step1">
+                                        </li>
+                                        <li>
+                                            <a href="#emailto">お会計<br>以前ご利用になった方</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="price-info">必要項目・配送先入力画面にお進みいただく前に、必ず<a href="../shopping/pp.html" class="text_075ccf">個人情報保護方針</a>をご一読ください。</p>
+                                <div id="error-disp">
+                                    <p>%error_message%</p>
+                                </div>
+                                <div id="cart-pw">
+                                    <fieldset>
+                                        <legend id="emailto">以前に利用したことがある方はメールアドレスとパスワードを入力してください。</legend>
+                                        <!--以下フォーム・インプット部分にはIMEスタイルを設定済み…プログラマー確認後このコメントは削除-->
+                                        <form action="./" method="post" name="frm" onsubmit="return emailChk(this);">
+                                            <table summary="既利用の方用フォーム" id="pw-input">
+                                                <tbody>
+                                                <tr>
+                                                    <th><label for="email">メールアドレス&nbsp;：&nbsp;</label></th>
+                                                    <td>
+                                                        <input type="text" name="email" id="email" size="30" style="ime-mode:disabled">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label for="pwd">パスワード&nbsp;：&nbsp;</label></th>
+                                                    <td>
+                                                        <input type="password" name="pwd" id="pwd" style="ime-mode:disabled">
+                                                    </td>
+                                                </tr>
+                      </tbody>
+                                            </table>
+                                            <table cellpadding="0" cellspacing="0" summary="既利用の方用フォーム2">
+                                                <tbody>
+                                                <tr>
+                                                    <td>パスワードを忘れた方は</td>
+                                                    <td><a href="./forgetpass/" target="_self" class="text_red">→こちらをクリックしてください。</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>前回注文後、メールアドレスが変わった方は</td>
+                                                    <td><a href="./changemail/" class="text_red">→こちらをクリックしてください。</a></td>
+                                                </tr>
+                      </tbody>
+                                            </table>
+                                            <div class="step-jump">
+                                                <input type="image" class="submit transi" value="" name="Submit" src="images/btn_submit.jpg" alt="次へ進む（購入手続きへ）">
+                                                <input type="hidden" name="status" value="step1">
+                                            </div>
+                                        </form>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <!-- end sec_regist -->
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- end main -->
+            %DispFooter%
+            <!-- end footer -->
+        </div>
+        <!-- end wrapper -->
+        <!-- End tn-wrapper -->
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/fix-height.js"></script>
+        %DispBeforeBodyEndTag%
+        %DispAccesslog%
+    </body>
+</html>

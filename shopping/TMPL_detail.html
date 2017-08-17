@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>%title_tag%%ititle%｜%ca_name%｜お買いもの｜千葉県優良県産品の焼きのり谷海苔店。お歳暮、お中元、ギフト、仏事にどうぞ。</title>
+        <meta name="description" content="%ititle%｜%ca_name%｜株式会社谷海苔店のオンラインショッピングページです。千葉県優良県産品に選ばれたの焼きのりを皆様にお届けします。お歳暮、お中元、ギフト、仏事等の焼きのりからおにぎり、お寿司、朝食等の食卓用の焼きのりまで弊社の海苔を是非ご利用ください。">
+        <meta name="keywords" content="%ititle%,%ca_name%,谷海苔店,千葉,海苔,のり,焼きのり,オンラインショッピング,通信販売,贈答用">
+        <meta name="robots" content="INDEX,FOLLOW">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=1000">
+        <!-- CSS -->
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/base.css" rel="stylesheet" type="text/css">
+        <link href="../css/content.css" rel="stylesheet" type="text/css">
+        <!-- JS -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script><!-- jQueryの読み込み -->
+        <script>window.jQuery || document.write('<script src="../js/jquery.min.js"><\/script>')</script><!-- 上記CDNダウン時のフォールバック -->
+        %DispAnalytics%
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="header">
+                <section class="container">
+                    <div class="header_content clearfix">
+                        <p class="h_logo">
+                            <a href="../"><img src="../common_img/h_logo.png" alt="株式会社谷海苔店"></a>
+                        </p>
+                        <div class="head_infor">
+                            <h1 class="SEO">%ititle%｜%ca_name%｜お買いもの｜谷海苔店は千葉県優良県産品の焼きのりをお届けします。お歳暮、お中元、ギフト、仏事にどうぞ。</h1>
+                            %DispHeader%
+                        </div>
+                    </div>
+                </section>
+            </header>
+            <!-- end header -->
+            %DispHeader2%
+            <!-- end gnav -->
+            <main id="shopping_page">
+                <section class="ttl_page">
+                    <div class="container">
+                        <h2><img src="./images/ttl_page.png" alt="谷海苔店　通信販売"></h2>
+                    </div>
+                </section>
+                <!-- end ttl_page -->
+                <section id="breadcrumb">
+                    <ul class="container clearfix">
+                        <li><a href="../">HOME</a></li>
+                        <li class="arrow">></li>
+                        <li>谷海苔店　通信販売</li>
+                        <li class="arrow">></li>
+                        <li>%ca_name%</li>
+                    </ul>
+                </section>
+                <!-- end breadcrumb -->
+                <section id="main">
+                    <div class="container clearfix">
+                        %DispSide%
+                        <div id="main_content">
+                            <div class="anchorlink_shopping">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a href="../shopping/?ca=1"><img src="../common_img/btn_shopping01.jpg" alt="ギフト・ご贈答用焼きのり"></a>
+                                    </li>
+                                    <li>
+                                        <a href="../shopping/?ca=2"><img src="../common_img/btn_shopping02.jpg" alt="食卓用焼きのり"></a>
+                                    </li>
+                                    <li>
+                                        <a href="../shopping/total.html#guide01"><img src="../common_img/btn_shopping03.jpg" alt="ご購入方法"></a>
+                                    </li>
+                                    <li>
+                                        <a href="../shopping/total.html#guide02"><img src="../common_img/btn_shopping04.jpg" alt="ご利用規約"></a>
+                                    </li>
+                                    <li>
+                                        <a href="../regist/"><img src="../common_img/btn_shopping05.jpg" alt="かごの中を見る"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sec_shopping_detail">
+                                <div class="box_detail">
+                                    <div class="title_detail clearfix">
+                                        <p class="name_box01">%product_name%</p>
+                                        %selling_price%
+                                    </div>
+                                    <div class="gallery_show clearfix">
+                                        %main_img%
+                                        <ul id="Thumbs" class="clearfix">
+                                            %mini_img_src1%%mini_img_src2%%mini_img_src3%
+                                        </ul>
+                                    </div>
+                                    <ul class="btn_detail clearfix">
+                                        <li class="pull_left">
+                                            <!-- tmpl:ifdef %stock_exists% -->
+										    <!-- tmpl:else --><br>
+										    <span style="color:#FF0000;">在庫なし</span>
+										    <!-- tmpl:endif -->
+										    <!-- tmpl:ifdef %stock_exists% -->
+                                            <form method="post" action="../regist/">
+                                                <input type="image" name="" value="カートに入れる" id="" src="./images/btn_03.jpg" alt="カートに入れる">
+                                                <input name="quantity" type="hidden" id="quantity" value="1">
+                                                <input type="hidden" name="pid" value="%product_id%">
+                                                <input type="hidden" name="dispcart" value="1">
+                                            </form>
+											<!-- tmpl:endif -->
+                                        </li>
+                                        <li class="pull_right">
+                                            <a href="../regist"><img src="./images/btn_04.jpg" alt="かごを見る"></a>
+                                        </li>
+                                    </ul>
+                                    <p>%item_details%</p>
+                                </div>
+                                <div class="box_infor_detail">
+                                    <p class="title">■ 返品について</p>
+                                    <p>商品到着後、7日以内に弊社までご連絡の上、ご返送ください。詳しくはこちら</p>
+                                </div>
+                                <ul class="btn_pager clearfix">
+                                    <li class="pull_left">
+                                        %pr%
+                                    </li>
+                                    <li class="btn_backtolist">
+                                        <a href="%back_page%"><img src="../common_img/btn_backtolist.jpg" alt="商品一覧へ戻る"></a>
+                                    </li>
+                                    <li class="pull_right">
+                                        %nx%
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- end main -->
+            %DispFooter%
+            <!-- end footer -->
+        </div>
+        <!-- end wrapper -->
+        <!-- End tn-wrapper -->
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/fix-height.js"></script>
+        %DispBeforeBodyEndTag%
+        %DispAccesslog%
+    </body>
+</html>

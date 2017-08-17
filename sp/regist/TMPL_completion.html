@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+                    <!--[if IE]>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <![endif]-->
+        <title>千葉県優良県産品の焼きのり谷海苔店。お歳暮、お中元、ギフト、仏事にどうぞ。</title>
+        <meta name="description" content="株式会社谷海苔店は千葉県優良県産品に選ばれたの焼きのりを皆様にお届けします。お歳暮、お中元、ギフト、仏事の際には弊社の海苔を是非ご利用ください。">
+        <meta name="keywords" content="谷海苔店,千葉,海苔,のり,焼きのり,お歳暮,お中元,県産品">
+        <meta name="robots" content="INDEX,FOLLOW">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="canonical" href="http://www.taninoriten.co.jp/regist">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/reset.css">
+        <!-- リセット用 -->
+        <link rel="stylesheet" href="../css/base.css">
+        <!-- 全体のレイアウト・共通設定用 -->
+        <link rel="stylesheet" href="../css/content.css">
+        <link rel="stylesheet" href="../css/shop.css">
+        <!-- トップページの設定用 -->
+        <!-- JS -->
+        <script type="text/javascript" src="../../regist/common.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script><!-- jQueryの読み込み -->
+        <script>window.jQuery || document.write('<script src="../js/jquery-1.8.min.js"><\/script>')</script>
+        %DispAnalytics%
+    </head>
+
+    <body id="pagetop" class="toppage">
+        <article id="wrapper">
+            <!-- wrapper -->
+            <header>
+                <!-- header -->
+                <h1><a href="../"><img src="../common_img/h_logo.png" alt="株式会社谷海苔店" width="225"></a></h1>
+                %DispHeader%
+            </header>
+            <!-- end header -->
+            <article class="tt_pages">
+                <h2><img src="./images/tt_pages.png" alt="谷海苔店　通信販売" width="206"></h2>
+            </article>
+            <main>
+                <!-- main -->
+                <article class="content" id="regist">
+                    <div class="sec_regist">
+                        <ul class="cartflow clearfix" summary="カート現在地">
+                            <li>カートの<br>中身確認</li>
+                            <li>必要項目・<br>配送先入力</li>
+                            <li>送信内容<br>確認</li>
+                            <li class="cartflow-now">お申し込み<br>完了</li>
+                        </ul>
+                        <!-- tmpl:ifdef %credit% -->
+                        <h3 class="style_title01">クレジット決済手続き</h3>
+                        <div id="next-credit">
+                            <form action="https://linkpt.cardservice.co.jp/cgi-bin/credit/order.cgi" method="POST" enctype="x-www-form-encoded" target="_top">
+                                <p>続いてクレジット決済手続きを行います。</p>
+                                <p>クレジット決済が完了するまでご購入は成立しません。<br>「クレジット決済画面へ」ボタンをクリックしてください。</p>
+                                <!-- 赤色の太字という記述が推奨されています。変更しないでください。 -->
+                                <p class="text_red text_bold">※クレジット決済完了後、登録されたメールアドレスにメールが届きますので<br>必ずご確認ください。</p>
+                                <p class="text_center">
+                                    <input type="image" class="submit transi w58" value="" name="Submit" src="./images/btn_completion.png" alt="クレジット決済画面へ">
+                                    <input type="hidden" name="custom" value="yes">
+                                    <input type="hidden" name="send" value="mall">
+                                    <input type="hidden" name="clientip" value="%aid%">
+                                    <!--<input type="hidden" name="usrname" value="%usrname%">-->
+                                    <input type="hidden" name="telno" value="%pn%">
+                                    <input type="hidden" name="email" value="%em%">
+                                    <input type="hidden" name="money" value="%am%">
+                                    <input type="hidden" name="sendid" value="%cod%">
+                                    <input type="hidden" name="sendpoint" value="shonanmarinetrade">
+                                </p>
+                            </form>
+                        </div>
+                        <!-- tmpl:else -->
+                        <h3 class="style_title01 mt5pr">お申し込み完了</h3>
+                        <div id="fin-cart">
+                            <p>ご購入ありがとうございました。<br>お客様へご購入内容に関するメールを送信させていただきましたのでご確認ください。</p>
+                        </div>
+                        <!-- tmpl:endif -->
+                    </div>
+                </article>
+                <!-- content -->
+                %DispSide%
+            </main>
+            <!-- end main -->
+            %DispFooter%
+            <!-- end footer -->
+        </article>
+        <!-- end wrapper -->
+        <!-- End tn-wrapper -->
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../js/common.js"></script>
+        <script src="../js/jquery.lightbox.mod.js"></script>
+        %DispBeforeBodyEndTag%
+        %DispAccesslog%
+    </body>
+</html>

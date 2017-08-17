@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+                    <!--[if IE]>
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                        <![endif]-->
+        <title>千葉県優良県産品の焼きのり谷海苔店。お歳暮、お中元、ギフト、仏事にどうぞ。</title>
+        <meta name="description" content="株式会社谷海苔店は千葉県優良県産品に選ばれたの焼きのりを皆様にお届けします。お歳暮、お中元、ギフト、仏事の際には弊社の海苔を是非ご利用ください。">
+        <meta name="keywords" content="谷海苔店,千葉,海苔,のり,焼きのり,お歳暮,お中元,県産品">
+        <meta name="robots" content="INDEX,FOLLOW">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="canonical" href="http://www.taninoriten.co.jp/regist">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/reset.css">
+        <!-- リセット用 -->
+        <link rel="stylesheet" href="../css/base.css">
+        <!-- 全体のレイアウト・共通設定用 -->
+        <link rel="stylesheet" href="../css/content.css">
+        <link rel="stylesheet" href="../css/shop.css">
+        <!-- トップページの設定用 -->
+        <!-- JS -->
+        <script type="text/javascript" src="../../regist/common.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script><!-- jQueryの読み込み -->
+        <script>window.jQuery || document.write('<script src="../js/jquery-1.8.min.js"><\/script>')</script>
+         %DispAnalytics%
+    </head>
+
+    <body id="pagetop" class="toppage">
+        <article id="wrapper">
+            <!-- wrapper -->
+            <header>
+                <!-- header -->
+                <h1><a href="../"><img src="../common_img/h_logo.png" alt="株式会社谷海苔店" width="225"></a></h1>
+                %DispHeader%
+            </header>
+            <!-- end header -->
+            <article class="tt_pages">
+                <h2><img src="./images/tt_pages.png" alt="谷海苔店　通信販売" width="206"></h2>
+            </article>
+            <main>
+                <!-- main -->
+                <article class="content" id="regist">
+                    <div class="sec_regist">
+                        <ul class="cartflow clearfix" summary="カート現在地">
+                            <li>カートの<br>中身確認</li>
+                            <li class="cartflow-now">必要項目・<br>配送先入力</li>
+                            <li>送信内容<br>確認</li>
+                            <li>お申し込み<br>完了</li>
+                        </ul>
+                        <h3 class="style_title01">ご注文内容</h3>
+                        <table cellpadding="0" cellspacing="0" id="cartlist-table">
+                            <thead>
+                            <tr>
+                                <th class="w20">商品番号<p></p></th>
+                                <th class="w35">商品名<p></p></th>
+                                <th class="w20">数量<p></p></th>
+                                <th class="w25">金額(円)<p></p></th>
+                            </tr>
+          </thead>
+                            <tbody>
+                                <!-- ↓ここから買い物カゴの一覧表示のループ開始 -->
+                                <!-- tmpl:loop %cart_list_loop% -->
+                            <tr>
+                                <td class="ctr">%part_no%</td>
+                                <td class="ctr">%product_name%</td>
+                                <td>%quantity%</td>
+                                <td>%amount%</td>
+                            </tr>
+                            <!-- tmpl:endloop %cart_list_loop% -->
+                            <!--↑ここまで買い物カゴの一覧表示のループ終了 -->
+          </tbody>
+                            <tfoot>
+                            <tr>
+                                <th colspan="3">小計(円)<p></p></th>
+                                <td colspan="3">%sum_price%</td>
+                            </tr>
+          </tfoot>
+                        </table>
+                        <p id="price-info" class="mt10">※金額は税込です。</p>
+                        <div id="error-disp">
+                            <p>%error_message%</p>
+                        </div>
+                        <form action="%php_self%" method="post" onsubmit="return inputChk1(this);">
+                            <h3 class="style_title01 mt5pr">必要項目入力</h3>
+                            <p>下記項目を入力してください。</p>
+                            <table cellpadding="0" cellspacing="0" class="style_table01">
+                                <tbody>
+                                <tr>
+                                    <th><span class="red">必須</span><p>お支払い方法選択</p></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="payment_method" id="radio2" value="2" %payment_method_ck2%="">
+                                        <label for="radio2">銀行振込</label>
+                                        <input type="radio" name="payment_method" id="radio3" value="3" %payment_method_ck3%="">
+                                        <label for="radio3">代引き</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span class="blue">任意</span><p>会社名／店舗名</p></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" name="company" id="" value="">
+                                        <p class="mt05">個人の方は「個人」とご入力ください。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span class="red">必須</span><p>お名前(漢字)</p></th>
+                                </tr>
+                                <tr>
+                                    <td><label for="label3">姓：</label>
+                                        <input name="last_name" id="label3" type="text" size="15" value="%last_name%" class="w37">
+                                        <label for="label4" class="ml05">名：</label>
+                                        <input name="first_name" id="label4" type="text" size="15" value="%first_name%" class="w37">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span class="red">必須</span><p>お名前（カナ）</p></th>
+                                </tr>
+                                <tr>
+                                    <td><label for="label5">姓：</label>
+                                        <input name="last_kana" id="label5" type="text" size="15" value="%last_kana%" class="w37">
+                                        <label for="label6" class="ml05">名：</label>
+                                        <input name="first_kana" id="label6" type="text" size="15" value="%first_kana%" class="w37">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span class="red">必須</span><p>郵便番号&nbsp;(半角数字)</p></th>
+                                </tr>
+                                <tr>
+                                    <td>〒
+                                        <input name="zip1" id="zip1" type="text" size="3" maxlength="3" value="%zip1%" class="w37">
+                  &nbsp;-&nbsp;
+                                        <input name="zip2" id="zip2" type="text" size="4" maxlength="4" value="%zip2%" class="w37">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span class="red">必須</span><p>都道府県</p></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="state">
+                                            <option value="" selected="">ご選択ください</option>
+                                            <!-- tmpl:loop %state_data_loop% -->
+                                            <option value="%state_id%" %state_selected%="">%state_name%</option>
+                                            <!-- tmpl:endloop %state_data_loop% -->
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span class="red">必須</span><p>市区町村番地</p></th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><input name="address1" id="address1" type="text" size="40" value="%address1%" style="ime-mode:active"></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="blue">任意</span><p>マンション名 部屋番号など</p></th>
+                                </tr>
+                                <tr>
+                                    <td><input name="address2" id="address2" type="text" size="40" value="%address2%" style="ime-mode:active"></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="red">必須</span><p>電話番号 (半角数字)</p></th>
+                                </tr>
+                                <tr>
+                                    <td><input name="tel1" id="tel1" type="text" size="5" value="%tel1%" class="w27">
+                  &nbsp;-&nbsp;
+                                        <input name="tel2" id="tel2" type="text" size="5" value="%tel2%" class="w27">
+                  &nbsp;-&nbsp;
+                                        <input name="tel3" id="tel3" type="text" size="5" value="%tel3%" class="w27">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span class="blue">任意</span><p>FAX (半角数字)</p></th>
+                                </tr>
+                                <tr>
+                                    <td><input name="fax1" id="fax1" type="text" size="5" value="%fax1%" class="w27">
+                  &nbsp;-&nbsp;
+                                        <input name="fax2" id="fax2" type="text" size="5" value="%fax2%" class="w27">
+                  &nbsp;-&nbsp;
+                                        <input name="fax3" id="fax3" type="text" size="5" value="%fax3%" class="w27">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span class="red">必須</span><p>メールアドレス</p></th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="email" id="email" size="40" value="%email%" style="ime-mode:disabled"></td>
+                                </tr>
+                                <tr>
+                                    <!-- tmpl:ifdef %input_pw% -->
+                                    <th><span class="red">必須</span><p>パスワードの設定</p></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="password" name="password" id="password" size="40" value="" class="w60">
+                  &nbsp;（半角英数字）
+                                        <p class="mt10 mb10">※確認のため再度入力してください。</p>
+                                        <input type="password" name="password2" id="password2" size="40" value="" class="w60">
+                  &nbsp;（半角英数字）
+                                    </td>
+                                    <!-- tmpl:endif -->
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <span class="blue">任意</span><p>配達時間の指定</p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!-- tmpl:loop %deli_time_loop% -->
+                                        <label class="mr10"><input type="radio" name="deli_time" value="%dtime_id%" %dtime_selected%> %dtime_name%</label>
+                                    %br%
+                                        <!-- tmpl:endloop %deli_time_loop% -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <span class="blue">任意</span><p>備考</p></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea id="kanso" name="remarks" cols="53" rows="10" class="w100"></textarea>
+                                    </td>
+                                </tr>
+          </tbody>
+                            </table>
+                            <h3 class="style_title01 mt5pr">配送先入力</h3>
+                            <p>★配送先が上記の場所と異なる場合、下記項目を入力してください。<br><span class="text_red">※何も入力しない場合配送先情報は自動的に上記と同じになります。</span></p>
+                            <table cellpadding="0" cellspacing="0" class="input-data style_table01 mt20">
+                                <tbody>
+                                <tr>
+                                    <th>お名前(漢字)</th>
+                                </tr>
+                                <tr>
+                                    <td><label for="label1">姓：</label>
+                                        <input name="deli_last_name" id="label1" type="text" size="10" value="%deli_last_name%" class="w37">
+                                        <label for="label2">名：</label>
+                                        <input name="deli_first_name" id="label2" type="text" size="10" value="%deli_first_name%" class="w37">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>郵便番号(半角数字)</th>
+                                </tr>
+                                <tr>
+                                    <td>〒<input name="deli_zip1" id="deli_zip1" type="text" size="3" maxlength="3" value="%deli_zip1%" class="w37">&nbsp;-&nbsp;<input name="deli_zip2" id="deli_zip2" type="text" size="4" maxlength="4" value="%deli_zip2%" class="w37"></td>
+                                </tr>
+                                <tr>
+                                    <th>都道府県</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="deli_state">
+                                            <option value="" selected="">ご選択ください</option>
+                                            <!-- tmpl:loop %state_data_loop% -->
+                                            <option value="%state_id%" %state_selected%>%state_name%</option>
+                                            <!-- tmpl:endloop %state_data_loop% -->
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>市区町村番地</th>
+                                </tr>
+                                <tr>
+                                    <td><input name="deli_address1" id="deli_address1" type="text" size="50" value="%deli_address1%" style="ime-mode:active"></td>
+                                </tr>
+                                <tr>
+                                    <th>マンション名 部屋番号など</th>
+                                </tr>
+                                <tr>
+                                    <td><input name="deli_address2" id="deli_address2" type="text" size="50" value="%deli_address2%" style="ime-mode:active"></td>
+                                </tr>
+                                <tr>
+                                    <th>電話番号</th>
+                                </tr>
+                                <tr>
+                                    <td><input name="deli_tel1" id="deli_tel1" type="text" size="5" value="%deli_tel1%" class="w29">&nbsp;-&nbsp;<input name="deli_tel2" id="deli_tel2" type="text" size="5" value="%deli_tel2%" class="w29">&nbsp;-&nbsp;<input name="deli_tel3" id="deli_tel3" type="text" size="5" value="%deli_tel3%" class="w29"></td>
+                                </tr>
+         </tbody>
+                            </table>
+                            <div class="step-jump2">
+                                <ul>
+                                    <li>
+                                        <input type="image" class="submit transi" value="" name="Submit" src="./images/btn_input.png" alt="次へ進む（確認画面へ）">
+                                        <input type="hidden" name="status" value="confirm">
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+                <!-- content -->
+                %DispSide%
+            </main>
+            <!-- end main -->
+            %DispFooter%
+            <!-- end footer -->
+        </article>
+        <!-- end wrapper -->
+        <!-- End tn-wrapper -->
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../js/common.js"></script>
+        <script src="../js/jquery.lightbox.mod.js"></script>
+        %DispBeforeBodyEndTag%
+        %DispAccesslog%
+    </body>
+</html>

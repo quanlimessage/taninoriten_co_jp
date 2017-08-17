@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>谷海苔店のこだわり｜千葉県優良県産品の焼きのり。お歳暮、お中元、ギフト、仏事に。</title>
+        <meta name="description" content="千葉県、千葉県優良県産品に選ばれた株式会社谷海苔店の焼きのりのこだわりをご紹介します。古来より高級品として食してきた海苔は主食であるごはんとの相性も良く、今や食卓には欠かせない存在です。お歳暮、お中元、ギフト、仏事の際にも弊社の海苔を是非ご利用ください。">
+        <meta name="keywords" content="谷海苔店,千葉,海苔,のり,焼きのり,ギフト,仏事,優良県産品">
+        <meta name="robots" content="INDEX,FOLLOW">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=1000">
+
+        <!-- CSS -->
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/base.css" rel="stylesheet" type="text/css">
+        <link href="../css/content.css" rel="stylesheet" type="text/css">
+        <link href="../css/shop.css" rel="stylesheet" type="text/css">
+        <!-- JS -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script><!-- jQueryの読み込み -->
+        <script>window.jQuery || document.write('<script src="../js/jquery.min.js"><\/script>')</script><!-- 上記CDNダウン時のフォールバック -->
+        <script type="text/javascript" src="common.js"></script>
+        %DispAnalytics%
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="header">
+                <section class="container">
+                    <div class="header_content clearfix">
+                        <p class="h_logo">
+                            <a href="../"><img src="../common_img/h_logo.png" alt="株式会社谷海苔店"></a>
+                        </p>
+                        <div class="head_infor">
+                            <h1 class="SEO">谷海苔店のこだわり｜千葉県優良県産品の焼きのりをお届けします。お歳暮、お中元、ギフト、仏事にどうぞ。</h1>
+                            %DispHeader%
+                        </div>
+                    </div>
+                </section>
+            </header>
+            <!-- end header -->
+            %DispHeader2%
+            <!-- end gnav -->
+            <main id="regist_page">
+                <section class="ttl_page">
+                    <div class="container">
+                        <h2><img src="./images/ttl_page.png" alt="谷海苔店　通信販売"></h2>
+                    </div>
+                </section>
+                <!-- end ttl_page -->
+                <section id="breadcrumb">
+                    <ul class="container clearfix">
+                        <li><a href="../">HOME</a></li>
+                        <li class="arrow">></li>
+                        <li>谷海苔店　通信販売</li>
+                    </ul>
+                </section>
+                <!-- end breadcrumb -->
+                <section id="main">
+                    <div class="container clearfix">
+                        %DispSide%
+                        <div id="main_content">
+                            <div class="sec_regist">
+                                <ul class="cartflow clearfix" summary="カート現在地">
+                                    <li class="cartflow-none">カートの中身確認</li>
+                                    <li class="cart_arrow"><img src="./images/arrow_01.png" alt="arrow"></li>
+                                    <li class="cartflow-none">必要項目・配送先入力</li>
+                                    <li class="cart_arrow"><img src="./images/arrow_01.png" alt="arrow"></li>
+                                    <li class="cartflow-now">送信内容確認</li>
+                                    <li class="cart_arrow"><img src="./images/arrow_01.png" alt="arrow"></li>
+                                    <li class="cartflow-none">お申し込み完了</li>
+                                </ul>
+                                <h3 class="style_title01">商品情報</h3>
+                                <table cellpadding="0" cellspacing="0" id="cartlist-table" summary="カートの中身">
+                                    <thead>
+                                    <tr>
+                                        <th width="83">商品番号</th>
+                                        <th width="261">商品名</th>
+                                        <th width="118">数量</th>
+                                        <th width="106">金額(円)</th>
+                                    </tr>
+              </thead>
+                                    <tbody>
+                                        <!-- ↓ここから買い物カゴの一覧表示のループ開始 -->
+                                        <!-- tmpl:loop %cart_list_loop% -->
+                                    <tr>
+                                        <td class="ctr">%part_no%</td>
+                                        <td class="ctr">%product_name%</td>
+                                        <td>%quantity%</td>
+                                        <td>%amount%</td>
+                                    </tr>
+                                    <!-- tmpl:endloop %cart_list_loop% -->
+                                    <!--↑ここまで買い物カゴの一覧表示のループ終了 -->
+              </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <th colspan="2" nowrap="">小計(円)</th>
+                                        <td colspan="2">%sum_price%</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">送料(円)</th>
+                                        <td colspan="2">%shipping_amount%</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" nowrap="">代引き手数料(円)</th>
+                                        <td colspan="2">%daibiki_amount%</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" nowrap="">お支払い総額(円)</th>
+                                        <td colspan="2"><strong>%total_price%</strong></td>
+                                    </tr>
+              </tfoot>
+                                </table>
+                                <p id="price-info" class="mt10">※金額は税込です。</p>
+                                <section class="mt40">
+                                    <h3 class="style_title01">注文者情報</h3>
+                                    <table cellpadding="0" cellspacing="0" class="check-data style_table01">
+                                        <tbody>
+                                        <tr>
+                                            <th width="133">お支払い方法</th>
+                                            <td width="405">%payment_method%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>会社名／店舗名</th>
+                                            <td>%company%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>お名前(漢字)</th>
+                                            <td>%name%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>お名前(カナ)</th>
+                                            <td>%kana%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>郵便番号</th>
+                                            <td>%zip%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>住所</th>
+                                            <td>%address%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>電話番号</th>
+                                            <td>%tel%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>FAX</th>
+                                            <td>%fax%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>メールアドレス</th>
+                                            <td>%email%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>配達時間の指定</th>
+                                            <td>%deli_time%</td>
+                                        </tr>
+               </tbody>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" class="check-data style_table01 mt20">
+                                        <tbody>
+                                        <tr>
+                                            <th>備考</th>
+                                        </tr>
+                                        <tr>
+                                            <td>%remarks%</td>
+                                        </tr>
+                </tbody>
+                                    </table>
+                                </section>
+                                <section class="mt40">
+                                    <h3 class="style_title01">配送先情報</h3>
+                                    <table cellpadding="0" cellspacing="0" class="check-data style_table01">
+                                        <tbody>
+                                        <tr>
+                                            <th width="133">お名前(漢字)</th>
+                                            <td width="405">%deli_name%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>郵便番号</th>
+                                            <td>%deli_zip%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>住所</th>
+                                            <td>%deli_address%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>電話番号</th>
+                                            <td>%deli_tel%</td>
+                                        </tr>
+               </tbody>
+                                    </table>
+                                </section>
+                                <table cellpadding="0" cellspacing="0" class="step-jump2">
+                                    <tbody>
+                                    <tr>
+                                        <td id="step-left">
+                                            <form action="%php_self%" method="post">
+                                                <input type="image" class="submit transi" value="" name="Submit" src="images/btn_confirm_l.jpg" alt="前に戻り修正を行う">
+                                                <input type="hidden" name="status" value="edit">
+                                                <input type="hidden" name="edit_type" value="to_step">
+                                            </form>
+                                        </td>
+                                        <td id="step-right">
+                                            <form action="%php_self%" method="post" onsubmit="return ConfirmMsg('この内容で確定となります。\r\nよろしいですか？');">
+                                                <input type="hidden" name="status" value="completion">
+                                                <input type="image" class="submit transi" value="" name="Submit" src="images/btn_confirm_r.jpg" alt="上記の内容で申し込む">
+                                            </form>
+                                        </td>
+                                    </tr>
+              </tbody>
+                                </table>
+                            </div>
+                            <!-- end sec_regist -->
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- end main -->
+            %DispFooter%
+            <!-- end footer -->
+        </div>
+        <!-- end wrapper -->
+        <!-- End tn-wrapper -->
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/fix-height.js"></script>
+        %DispBeforeBodyEndTag%
+        %DispAccesslog%
+    </body>
+</html>

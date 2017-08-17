@@ -1,0 +1,24 @@
+@charset "utf-8";
+input[type="radio"],
+input[type="checkbox"] { margin: -2px 10px 0 0;}
+input[type="text"] {
+	padding: 10px;
+	height: 15px;
+	width: 97%
+}
+select {
+	padding: 5px 10px;
+    height: 40px;
+    width: 35%;
+}
+textarea {
+	width: 97%;
+	padding: 10px;
+}
+
+#formEnd { text-align:center; }
+#formEnd input { display:inline-block; padding:6px 12px; cursor:pointer; font-weight:bold; }
+/* ---IME ON--- */
+.ime_on { ime-mode: active; }
+/* ---IME KILL--- */
+.ime_off { ime-mode: desabled; }
